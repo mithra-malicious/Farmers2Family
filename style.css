@@ -1,0 +1,73 @@
+:root {
+    --kraft: #d2b48c;
+    --dark: #2d2d2d;
+    --green: #25D366; /* WhatsApp Green */
+    --accent: #8b5a2b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: #fdfaf6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo span { color: var(--accent); font-weight: bold; }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--kraft);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.price { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+
+.add-btn, .whatsapp-btn {
+    background: var(--dark);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.whatsapp-btn {
+    background: var(--green);
+    margin-top: 1rem;
+    display: none; /* Hidden until items added */
+}
+
+.order-section {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
