@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers to Family | Pure Fuel Brownies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">100% Local Farmer-Owned</div>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Farmers to Family Logo">
+                <h1>FARMERS TO FAMILY</h1>
+            </div>
+            <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>PURE FUEL BROWNIES</h2>
+        <p class="tagline">High-Quality Protein to Power Your Recovery [cite: 5]</p>
+        <div class="benefits">
+            <span>Keto-Friendly [cite: 6]</span> • <span>Flourless & G-F [cite: 8]</span> • <span>0% Added Sugar [cite: 13]</span>
+        </div>
+    </section>
+
+    <main class="product-container">
+        <div class="product-card" data-id="Premium Kraft Tray" data-price="35.99">
+            <div class="product-img-placeholder">
+                <img src="tray-image.jpg" alt="Premium Biodegradable Tray">
+            </div>
+            <h3>Premium Biodegradable Tray</h3>
+            <p class="macro">20g Protein [cite: 20] | 12g Net Carbs [cite: 7]</p>
+            <p class="price">$35.99 TTD</p>
+            <button class="add-to-cart">Add to Order</button>
+        </div>
+
+        <div class="product-card" data-id="Eco-Resealable Pouch" data-price="19.99">
+            <div class="product-img-placeholder">
+                <img src="pouch-image.jpg" alt="Eco-Resealable Pouch">
+            </div>
+            <h3>Eco-Resealable Pouch</h3>
+            <p class="macro">High-Performance Macros [cite: 44]</p>
+            <p class="price">$19.99 TTD</p>
+            <button class="add-to-cart">Add to Order</button>
+        </div>
+    </main>
+
+    <section id="cart-section" class="cart-container">
+        <h2>Your Request Summary</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Estimated Total: $<span id="total-val">0.00</span></div>
+        <p class="delivery-note">Delivery: Thursday to Friday [cite: 55]</p>
+        <button id="whatsapp-order" class="wa-btn">Request Order via WhatsApp</button>
+    </section>
+
+    <footer>
+        <p>Maingot Rd., Tunapuna [cite: 61]</p>
+        <p>farmers2family@yahoo.com [cite: 60]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
